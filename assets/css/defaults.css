@@ -32,9 +32,12 @@ h2 {
   font-size: var(--heading-h2);
 }
 
-a {}
-a:visited{}
-a:hover {}
+.dark a,
+.dark a:visited {
+  color: var(--primary-mustard);
+  font-weight: bold;
+}
+/* a:hover {} */
 
 p {}
 
