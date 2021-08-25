@@ -1,5 +1,12 @@
 @import url('./reset.css');
 @import url('./variables.css');
 @import url('./defaults.css');
+@import url('./grid.css');
 
-/* Structure */
+header img {
+  max-width: 481px;
+}
+
+@media screen and (min-width: 52.125em) { /* 834px */
+  
+}
