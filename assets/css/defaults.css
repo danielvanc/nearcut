@@ -1,0 +1,50 @@
+html {
+  -webkit-text-size-adjust: 100%;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+  font-size: 1em; 
+}
+
+body {
+  background-color: var(--color-background);
+  color: var(--color-text-default);
+  font-family: var(--font-family-default);
+  font-weight: var(--font-weight-default);
+  /* line-height: var(--lineheight-text-default);  */
+}
+
+h1, 
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--font-family-secondary);
+  font-weight: var(--font-heading-default);
+}
+
+h1 {
+  font-size: var(--heading-h1-small);
+}
+
+h2 {
+  font-size: var(--heading-h2);
+}
+
+@media screen and (min-width: 52.125em) { /* 834px */
+  h1{
+    font-size: var(--heading-h1-large);
+  }
+}
+
+@media screen and (min-width: 74.625em) { /* 1194px */
+}
+
+a {}
+a:visited{}
+a:hover {}
+
+p {}
+
+ul {}
+ul li {}
