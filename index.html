@@ -10,7 +10,7 @@
     <!-- Grab fonts and only weights required to minimize file size -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans&family=Oswald:wght@500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;800&family=Oswald:wght@500&display=swap" rel="stylesheet">
 
     <!-- Include stylesheet for media type of screen -->
     <link rel="stylesheet" href="assets/css/screen.css" media="screen">
@@ -21,7 +21,7 @@
     <main class="grid">
 
       <div class="mast content">
-        <h1>The completely powerful booking system for barbers</h1>
+        <h1>The completely powerful<br /> booking system for barbers</h1>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque maecenas sed faucibus volutpat id eleifend quis elementum.</p>
         <p>
           <a class="btn">Get started</a>
@@ -33,35 +33,45 @@
       </div>
 
       <form method="POST" class="dark">
-        <p>
+        <p class="input">
           <label for="name">Name</label>
           <input name="name" type="text" placeholder="Please enter your full name" />
         </p>
-        <p>
+        <p class="input">
           <label for="email">Email</label>
           <input name="email" type="email" placeholder="Please enter your email" />
         </p>
-        <p>
+        <div class="phone">
           <label for="number">Phone number</label>
-          <div>
+          <p>
             <select>
-              <option>(flag here)+44</option>
+              <option style="background: url('/assets/img/flag-germany.svg') no-repeat;">
+                 +44
+              </option>
             </select>
             <input name="number" type="number" value="(+49) 000 000 000" />
-          </div>
-        </p>
-        <p>
+          </p>
+        </div>
+        <p class="input">
           <label for="business">Business Name</label>
           <input name="business" type="text" placeholder="Please enter your business name here" />
         </p>
-        <p>
+        <p class="input phone country">
+          <label for="country">Country</label>
+          <select name="country">
+            <option style="background: url('/assets/img/flag-germany.svg') no-repeat;">
+                Germany
+            </option>
+          </select>
+        </p>
+        <p class="checkbox">
           <input type="checkbox" name="terms" value="1" />
           <label for="terms">I agree to all terms &amp; conditions and policy features.</label>
         </p>
-        <p>
+        <p class="max-width">
           <button type="submit" class="btn">Create Your Account</button>
         </p>
-        <p>
+        <p class="login max-width">
           Already have a Nearcut account? <a href="http://" title="Login to your Nearcut account">Login Here</a>
         </p>
       </form>
@@ -78,19 +88,23 @@
       </article>
     </main> 
 
-    <footer class="grid">
-      <div class="foot-notes">
-        <img src="assets/img/nearcut-footer-logo.svg" alt="NearCut logo" />
-        <p>So much more than a booking system</p>
-        <ul class="li">01 606 277 565</ul>
-        <ul class="li"><a href="https://mailto:emailhere">Email us</a></ul>
-      </div>
-      <div class="social-media">
-        <h4>Social Media</h4>
-        <ul class="li"><a href="https://" target="_blank"></a></ul>
-        <ul class="li"><a href="https://" target="_blank"></a></ul>
-        <ul class="li"><a href="https://" target="_blank"></a></ul>
-        <ul class="li"><a href="https://" target="_blank"></a></ul>
+    <footer>
+      <div class="footer-content grid">
+        <div class="foot-notes">
+          <img src="assets/img/nearcut-footer-logo.svg" alt="NearCut logo" />
+          <p>So much more than a booking system</p>
+          <ul>
+            <li>01 606 277 565</li>
+            <li><a href="https://mailto:emailhere">Email us</a></li>
+          </ul>
+        </div>
+        <div class="social-media">
+          <h4>Social Media</h4>
+          <ul class="li"><a href="https://" target="_blank"></a></ul>
+          <ul class="li"><a href="https://" target="_blank"></a></ul>
+          <ul class="li"><a href="https://" target="_blank"></a></ul>
+          <ul class="li"><a href="https://" target="_blank"></a></ul>
+        </div>
       </div>
     </footer>
 

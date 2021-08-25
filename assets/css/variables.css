@@ -1,6 +1,9 @@
 :root {
   /* Colors */
   --nearcut-grey0: #111111;
+  --nearcut-grey2: #919191;
+  --nearcut-grey3: #BDBDBD;
+  --nearcut-grey4: #E9E9E9;
   --primary-gray: #242424;
   --primary-mustard: #FFEE7A;
   --primary-white: #FFFFFF;
@@ -11,14 +14,15 @@
   --color-text-default: var(--primary-gray);
   --font-family-default: 'Nunito Sans', sans-serif;
   --font-family-secondary: 'Oswald', sans-serif;
+  --letter-spacing-default: 0.02em;
   /* --font-size-large: 4rem;
   --font-size-medium: 3rem;
   --font-size-default: 1.25rem;
   --font-size-small: .8rem; */
   --font-weight-default: 400;
   --font-heading-default: 500;
-  /* --lineheight-text-default: 1.25; */
-  /* --lineheight-text-alt: .9; */
+  --lineheight-heading-default: 130%;
+  --lineheight-text-default: 175%;
   --heading-h1-small: 1.5rem; /* 24px;*/
   --heading-h1-large: 2.5rem; /* 40px;*/
 
@@ -40,6 +44,8 @@
   --grid-column-large-gap: 16px;
   --grid-row-large-gap: 16px;
 
+  --grid-max-width: 1200px;
+
   /* Breakpoints */
   /* Sizes are based on width of artboards in designs */
   /* --breakpoint-small: 375px;
@@ -49,7 +55,7 @@
   /* Borders */
 
   /* Spacing */
-  --document-spacing-small: 0 18px;
+  --document-spacing-small: 40px 18px 0 18px;
   --document-spacing-medium: 30px 22px 65px 22px;
   --document-spacing-large: 30px 24px 65px 24px;
 }

@@ -2,7 +2,9 @@
   display: grid;
   grid-template-columns: var(--grid-small);
   grid-column-gap: var(--grid-column-small-gap);
-  grid-row-gap: var(--grid-row-small-gap); 
+  grid-row-gap: var(--grid-row-small-gap);
+  max-width: var(--grid-max-width);
+  margin: 0 auto; 
 }
 
 .grid > * {
@@ -19,6 +21,10 @@
 form,
 article {
   grid-row: 3 / 4;
+}
+
+footer .foot-notes {
+  grid-column: 1 / 4;
 }
 
 

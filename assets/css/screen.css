@@ -2,11 +2,110 @@
 @import url('./variables.css');
 @import url('./defaults.css');
 @import url('./grid.css');
+@import url('./forms.css');
+@import url('./buttons.css');
 
-header img {
-  max-width: 481px;
+main {
+  padding: var(--document-spacing-small);
+  padding-bottom: 62px;
+}
+
+.mast.content { margin-bottom: 72px }
+.mast.content .btn {
+  margin-top: 24px;
+  max-width: 242px;
+}
+.mast.image {
+  margin-bottom: 16px;
+}
+.mast.image img {
+  display: block;
+  margin: 0 auto;
+  max-width: 90%;
+}
+
+article p {
+  margin-bottom: 30px;
+}
+
+footer {
+  background: var(--nearcut-grey0);
+  padding: 80px 25px 55px 25px;
+}
+
+
+.foot-notes {
+  color: var(--primary-white);
+}
+.foot-notes img {
+  max-width: 128px;
+  margin-bottom: 16px;
+}
+.foot-notes p {
+  font-size: 14px;
+  margin-bottom: 16px;
+}
+.foot-notes a {
+  color: var(--primary-white);
+}
+.foot-notes li {
+  margin-bottom: 16px;
+}
+
+.foot-notes li:last-of-type {
+  margin-bottom: 0;
+}
+
+.social-media {
+  margin-top: 78px;
+}
+
+.social-media h4 {
+  color: var(--primary-mustard);
+  margin-bottom: 18px;
+}
+
+@media screen and (max-width: 833px) {
+  article {
+    overflow: hidden;
+    text-indent: 100%;
+    white-space: nowrap;
+  }
 }
 
 @media screen and (min-width: 52.125em) { /* 834px */
-  
+  main {
+    padding: var(--document-spacing-medium);
+  }
+
+  .mast.content {
+    padding: 46px 15% 0 0;
+  }
+
+  .mast.image img {
+    max-width: initial;
+    transform: translateX(-16px);
+  }
+
+  article {
+    padding: 90px 0 0 104px;
+  }
+}
+
+@media screen and (min-width: 74.625em) { /* 1194px */
+  .mast.image img {
+    display: inline;
+  }
+
+  .mast.content {
+    padding: 80px 15% 0 0;
+  }
+
+  form {
+    margin-right: 10%;
+  }
+
+  article {
+    padding: 117px 0 0 10px;
+  }
 }

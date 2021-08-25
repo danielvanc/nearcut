@@ -1,0 +1,114 @@
+form {
+  background: var(--primary-gray);
+  border-radius: 16px;
+  padding: 32px 24px;
+  /* max-width: 423px; */
+}
+
+form label {
+  color: var(--primary-white);
+  display: block;
+  font-size: 14px;
+  line-height: 24px; /* identical to box height, or 171% */
+  letter-spacing: 0.04em;
+}
+
+.input {
+  margin-bottom: 1rem;
+}
+
+input {
+  background: var(--nearcut-grey4);
+  border-radius: 4px;
+  border: 0;
+  padding: 12px 12px 13px 12px;
+}
+input[type="text"], 
+input[type="email"] {
+  margin-right: 24px;
+  width: calc(100% - 24px);
+}
+
+input[type="text"]::placeholder, 
+input[type="email"]::placeholder {
+  color: var(--nearcut-grey2);
+}
+
+.phone p {
+  display: flex;
+}
+.phone select {
+  background: var(--nearcut-grey4);
+  border: 0;
+  border-top-left-radius: 4px;
+  border-bottom-left-radius: 4px;
+  color: var(--nearcut-grey2);
+  height: 40px;
+}
+.phone input {
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+  border-left: 1px solid #BDBDBD;
+  width: 100%;
+}
+
+div.phone {
+  margin-bottom: 16px;
+}
+p.country {
+  margin-bottom: 24px;
+}
+
+p.country select {
+  border-top-right-radius: 4px;
+  border-bottom-right-radius: 4px;
+  padding:0 12px;
+  width: 100%;
+}
+
+.checkbox {
+  display: flex;
+  margin-bottom: 32px;
+}
+
+.checkbox input {
+  border: 0;
+  margin-right: 10px;
+}
+.checkbox label {
+  font-size: 12px;
+  letter-spacing: 0.06em;
+  line-height: 20px;/* or 167% */
+}
+
+button[type="submit"] {
+  color: var(--primary-gray);
+  width: 100%;
+  border: 0;
+  height: 40px;
+  margin-bottom: 21px;
+  padding: 2px 0 0 0;
+}
+
+.login {
+  color: var(--primary-white);
+  font-size: 14px;
+  line-height: 24px;
+}
+
+.max-width {
+  margin: 0 auto;;
+  max-width: 312px;
+}
+
+@media screen and (min-width: 52.125em) { /* 834px */
+  form {
+    margin:55px 11% 0 0;
+  }
+}
+
+@media screen and (min-width: 64.375em) { /* 1024px */
+  form {
+    margin:55px 15% 0 0;
+  }
+}
