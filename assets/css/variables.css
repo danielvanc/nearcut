@@ -24,9 +24,21 @@
 
 
   --heading-h2: 1.5rem; /* 24px;*/
+
   /* Layout */
   
   /* Grid */
+  --grid-small: repeat(4, 1fr);
+  --grid-column-small-gap: 16px;
+  --grid-row-small-gap: 16px;
+  
+  --grid-medium: repeat(6, 1fr);
+  --grid-column-medium-gap: 16px;
+  --grid-row-medium-gap: 16px;
+
+  --grid-large: repeat(12, 1fr);
+  --grid-column-large-gap: 16px;
+  --grid-row-large-gap: 16px;
 
   /* Breakpoints */
   /* Sizes are based on width of artboards in designs */
@@ -37,4 +49,7 @@
   /* Borders */
 
   /* Spacing */
+  --document-spacing-small: 0 18px;
+  --document-spacing-medium: 30px 22px 65px 22px;
+  --document-spacing-large: 30px 24px 65px 24px;
 }
