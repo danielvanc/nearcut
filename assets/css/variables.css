@@ -57,5 +57,6 @@
   /* Spacing */
   --document-spacing-small: 40px 18px 0 18px;
   --document-spacing-medium: 30px 22px 65px 22px;
-  --document-spacing-large: 30px 24px 65px 24px;
+  --document-spacing-large: 30px 0 0 0;
+  /* --document-spacing-large: 30px 24px 65px 24px; */
 }

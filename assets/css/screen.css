@@ -10,6 +10,9 @@ main {
   padding-bottom: 62px;
 }
 
+
+/* Mast Content and Image styling */
+
 .mast.content { margin-bottom: 72px }
 .mast.content .btn {
   margin-top: 24px;
@@ -23,16 +26,22 @@ main {
   margin: 0 auto;
   max-width: 90%;
 }
-
 article p {
   margin-bottom: 30px;
 }
 
+
+/* Footer styling */
+
 footer {
   background: var(--nearcut-grey0);
+}
+.footer-content {
   padding: 80px 25px 55px 25px;
 }
 
+
+/* Foot notes */
 
 .foot-notes {
   color: var(--primary-white);
@@ -47,22 +56,67 @@ footer {
 }
 .foot-notes a {
   color: var(--primary-white);
+  text-decoration: none;
 }
 .foot-notes li {
-  margin-bottom: 16px;
+  padding-left: 40px;
+  position: relative;
+  margin-bottom: 22px;
 }
-
 .foot-notes li:last-of-type {
   margin-bottom: 0;
 }
+.foot-notes li:before {
+  background-image: url('/assets/img/icons-sprite.png');
+  background-repeat: no-repeat;
+  content: '';
+  display: block;
+  height: 21px;
+  width: 20px;
+  position: absolute;
+  left: 0;
+}
+.foot-notes li.tel:before {
+  background-position: -379px -2px;
+}
+.foot-notes li.mail:before {
+  background-position-x: -327px;
+}
+
+
+/* Footer Social media list */
 
 .social-media {
   margin-top: 78px;
 }
-
 .social-media h4 {
   color: var(--primary-mustard);
   margin-bottom: 18px;
+}
+.social-media ul {
+  display: flex;
+}
+.social-media ul li {
+  margin-right: 54px;
+}
+.social-media ul li:last-of-type {
+  margin-right: 0;
+}
+.social-media ul a {
+  background-image: url('/assets/img/icons-sprite.png');
+  background-repeat: no-repeat;
+  display: inline-block;
+  height: 19px;
+  width: 23px;
+}
+.social-media li.instagram a {
+  background-position-x: -85px;
+}
+.social-media li.twitter a {
+  background-position-x: -172px;
+}
+.social-media li.linkedin a {
+  background-position-x: -260px;
 }
 
 @media screen and (max-width: 833px) {
@@ -73,6 +127,11 @@ footer {
   }
 }
 
+@media screen and (min-width: 375px) { /* 834px */
+  .social-media ul li {
+    margin-right: 74px;
+  }
+}
 @media screen and (min-width: 52.125em) { /* 834px */
   main {
     padding: var(--document-spacing-medium);

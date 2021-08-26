@@ -53,6 +53,12 @@ p {
   line-height: var(--lineheight-text-default)
 }
 
+.hide-text {
+  overflow: hidden;
+  text-indent: 100%;
+  white-space: nowrap;
+}
+
 @media screen and (min-width: 52.125em) { /* 834px */
   h1 {
     margin-bottom: 10px;
