@@ -2,14 +2,13 @@ form {
   background: var(--primary-gray);
   border-radius: 16px;
   padding: 32px 24px;
-  /* max-width: 423px; */
 }
 
 form label {
   color: var(--primary-white);
   display: block;
   font-size: 14px;
-  line-height: 24px; /* identical to box height, or 171% */
+  line-height: var(--lineheight-default);
   letter-spacing: 0.04em;
 }
 
@@ -37,14 +36,51 @@ input[type="email"]::placeholder {
 .phone p {
   display: flex;
 }
-.phone select {
-  background: var(--nearcut-grey4);
-  border: 0;
+
+#btn-select {
   border-top-left-radius: 4px;
   border-bottom-left-radius: 4px;
-  color: var(--nearcut-grey2);
-  height: 40px;
+  padding-left: 10px;
+  padding-right: 40px;
 }
+#btn-select-country {
+  border-radius: 4px;
+  width: 100%;
+}
+
+.sel-button {
+  background: var(--nearcut-grey4);
+  border: 0;
+  color: var(--nearcut-grey2);
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  height: 40px;
+  position: relative;
+}
+.sel-button::after {
+  background: url('/assets/img/Chevron-Down.png') no-repeat;
+  content: "";
+  display: block;
+  height: 28px;
+  width: 22px;
+  position: absolute;
+  right: 10px;
+  z-index: 20;
+  bottom: 0
+}
+
+#btn-select img {
+  height: 40px;
+  width: 45px;
+}
+
+#btn-select-country img {
+  height: 20px;
+  width: 35px;
+  margin-right: 8px;
+}
+
 .phone input {
   border-top-left-radius: 0;
   border-bottom-left-radius: 0;

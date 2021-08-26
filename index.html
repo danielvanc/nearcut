@@ -44,12 +44,13 @@
         <div class="phone">
           <label for="number">Phone number</label>
           <p>
-            <select>
-              <option style="background: url('/assets/img/flag-germany.svg') no-repeat;">
+            <select id="country-numbers" class="hide">
+              <option data-icon="/assets/img/flag-germany.svg">
                  +44
               </option>
             </select>
-            <input name="number" type="number" value="(+49) 000 000 000" />
+            <button id="btn-select" class="sel-button" value=""></button>
+            <input name="number" type="number" value="(+49) 000 000 000" placeholder="(+49) 000 000 000" />
           </p>
         </div>
         <p class="input">
@@ -58,11 +59,12 @@
         </p>
         <p class="input phone country">
           <label for="country">Country</label>
-          <select name="country">
+          <select name="country" id="country-list" class="hide">
             <option style="background: url('/assets/img/flag-germany.svg') no-repeat;">
                 Germany
             </option>
           </select>
+          <button id="btn-select-country" class="sel-button" value=""></button>
         </p>
         <p class="checkbox">
           <input type="checkbox" name="terms" value="1" />
@@ -119,6 +121,52 @@
         </div>
       </div>
     </footer>
+
+    <script type='text/javascript'>
+      var countryButton = document.getElementById("btn-select");
+      var countryListButton = document.getElementById("btn-select-country");
+      var countryItems = [];
+      var countryListItems = [];
+      var countrySelect = Array.prototype.slice.call(document.getElementById('country-numbers'));
+      var countries = Array.prototype.slice.call(document.getElementById('country-list'));
+
+      function addItemsToList(list, includeText) {
+        var newItems = []
+        
+        for (let i = 0; i < list.length; i++) {
+          var item = list[i];
+          var text = item.innerText;
+          var img = '<img src="assets/img/flag-germany.svg" alt="" />';
+          var newItem = includeText ? img + text : img;
+          newItems.push(newItem);
+        }
+
+        return newItems;
+      }
+
+      countryItems = addItemsToList(countrySelect, false)
+      countryListItems = addItemsToList(countries, true)
+
+      countryButton.innerHTML = countryItems[0]
+      // Set Germany as the default list item value
+      countryButton.setAttribute("value", "Germany")
+      
+      countryListButton.innerHTML = countryListItems[0]
+      // Set Germany as the default list item value
+      countryListButton.setAttribute("value", "Germany")
+
+      countryButton.onclick = function(e) {
+        e.preventDefault();
+        // Here you could load out the fake dropdown into a list of items
+        // with a dropdown shadow to mimick a dropdown
+      }
+
+      countryListButton.onclick = function(e) {
+        e.preventDefault();
+        // Here you could load out the fake dropdown into a list of items
+        // with a dropdown shadow to mimick a dropdown
+      }
+    </script>
 
   </body>
   
