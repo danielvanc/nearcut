@@ -112,7 +112,7 @@ p.country select {
   margin-right: 10px;
 }
 .checkbox label {
-  font-size: 12px;
+  font-size: var(--font-size-tiny);
   letter-spacing: 0.06em;
   line-height: 20px;/* or 167% */
 }
@@ -128,7 +128,7 @@ button[type="submit"] {
 
 .login {
   color: var(--primary-white);
-  font-size: 14px;
+  font-size: var(--font-size-small);
   line-height: 24px;
 }
 

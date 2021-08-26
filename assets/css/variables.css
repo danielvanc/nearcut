@@ -15,10 +15,11 @@
   --font-family-default: 'Nunito Sans', sans-serif;
   --font-family-secondary: 'Oswald', sans-serif;
   --letter-spacing-default: 0.02em;
-  /* --font-size-large: 4rem;
-  --font-size-medium: 3rem;
-  --font-size-default: 1.25rem;
-  --font-size-small: .8rem; */
+  --font-size-tiny: 0.75rem; /* 12px */
+  --font-size-small: 0.875rem; /* 14px */ 
+  /* --font-size-medium: 3rem; */
+  --font-size-default: 1rem; /* 16px */
+  /* --font-size-large: 4rem; */
   --font-weight-default: 400;
   --font-heading-default: 500;
   --lineheight-heading-default: 130%;

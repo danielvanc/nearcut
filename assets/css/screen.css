@@ -37,7 +37,7 @@ footer {
   background: var(--nearcut-grey0);
 }
 .footer-content {
-  padding: 80px 25px 55px 25px;
+  padding: 80px 1.563rem 55px 1.563rem;
 }
 
 
@@ -51,7 +51,7 @@ footer {
   margin-bottom: 16px;
 }
 .foot-notes p {
-  font-size: 14px;
+  font-size: var(--font-size-small);
   margin-bottom: 16px;
 }
 .foot-notes a {
@@ -59,7 +59,7 @@ footer {
   text-decoration: none;
 }
 .foot-notes li {
-  padding-left: 40px;
+  padding-left: 2.5rem /* 40px */;
   position: relative;
   margin-bottom: 22px;
 }
@@ -87,17 +87,17 @@ footer {
 /* Footer Social media list */
 
 .social-media {
-  margin-top: 78px;
+  margin-top: 4.875rem /* 78px */;
 }
 .social-media h4 {
   color: var(--primary-mustard);
-  margin-bottom: 18px;
+  margin-bottom: 1.125rem /* 18px */;
 }
 .social-media ul {
   display: flex;
 }
 .social-media ul li {
-  margin-right: 54px;
+  margin-right: 3.375rem /* 54px */;
 }
 .social-media ul li:last-of-type {
   margin-right: 0;
@@ -119,7 +119,7 @@ footer {
   background-position-x: -260px;
 }
 
-@media screen and (max-width: 833px) {
+@media screen and (max-width: 52.063rem ) { /* 833px */
   article {
     overflow: hidden;
     text-indent: 100%;
@@ -127,11 +127,12 @@ footer {
   }
 }
 
-@media screen and (min-width: 375px) { /* 834px */
+@media screen and (min-width: 23.438rem) { /* 375px */
   .social-media ul li {
-    margin-right: 74px;
+    margin-right: 4.625rem; /* 74px*/
   }
 }
+
 @media screen and (min-width: 52.125em) { /* 834px */
   main {
     padding: var(--document-spacing-medium);
@@ -165,6 +166,6 @@ footer {
   }
 
   article {
-    padding: 117px 0 0 10px;
+    padding: 117px 0 0 1rem;
   }
 }
